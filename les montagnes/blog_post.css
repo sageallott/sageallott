@@ -116,8 +116,6 @@ font-weight:bold;
 }
 
 /* responsive styles */
-
-/* medium screens */
 @media (min-width: 1400px) {
 	.blog-container {
 	display:grid;

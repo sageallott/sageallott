@@ -3,17 +3,31 @@
 <head>
 <meta charset="utf-8">
 <title>Les Montagnes</title>
-	<link rel="stylesheet" href="les_montagnes.css"/>
-	<link rel="stylesheet" href="blog_post.css"/>
+	<link rel="stylesheet" href="/Users/sallott/Documents/GitHub/sageallott/les montagnes/style.css"/>
 	<link href="https://fonts.googleapis.com/css?family=Raleway|Roboto&display=swap" rel="stylesheet">
+<style>
+
+#featured-img {
+	width:400px;
+	margin: 4px 15px 15px 0px;
+	float: left; 
+	height: 100%;
+}
+
+#img-caption{
+	display:block;
+	background-color: #f5f5f5;
+	color: #333f48;
+}
+</style>
 </head>
 <body>  
 	<div class="menu">
         <div class="logo">
-			<a href="les_montagnes_home.html"><img id="logo-head" src="images/montagnes-logo.svg" alt="Mountains"/></a> 
+			<a href="/Users/sallott/Documents/GitHub/sageallott/les montagnes/main.html"><img id="logo-head" src="images/montagnes-logo.svg" alt="Mountains"/></a> 
 		</div>
 		<div class="items">
-			<a href="les_montagnes_home.html" id="menu-item">About</a>
+			<a href="/Users/sallott/Documents/GitHub/sageallott/les montagnes/main.html" id="menu-item">About</a>
 		</div>
     </div>
     <div class="body-container">
@@ -28,9 +42,14 @@
 				</div>
 		<div class="blog-container">
 			<div id="blog-post">
-				<p id="blog-body" >
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ullamcorper augue, id faucibus lacus. Mauris auctor semper turpis, et tincidunt lacus vulputate eu. Praesent consequat consequat libero at porttitor. Etiam magna est, sagittis id semper eget, porttitor ac turpis. Etiam diam dui, consequat non faucibus a, vehicula vel nibh. Nullam magna ex, suscipit ultricies lacinia vel, facilisis a orci. Nulla at laoreet eros. Proin molestie enim quis aliquet consectetur. Nunc laoreet porta dolor non dapibus. Fusce cursus elit et diam tincidunt bibendum. Nullam quis tincidunt lacus. Nam sit amet semper massa. In eu enim convallis, cursus erat sed, egestas nunc.
-				</p>
+				<div class="img-paragraph">
+					<span id="img-caption"></span>	
+						<p><img id="featured-img" src="/Users/sallott/Documents/GitHub/sageallott/les montagnes/images/henning-witzel-ukvgqriuOgo-unsplash.jpg">City at night</p>
+						</span>
+						<span id="blog-body">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ullamcorper augue, id faucibus lacus. Mauris auctor semper turpis, et tincidunt lacus vulputate eu. Praesent consequat consequat libero at porttitor. Etiam magna est, sagittis id semper eget, porttitor ac turpis. Etiam diam dui, consequat non faucibus a, vehicula vel nibh. Nullam magna ex, suscipit ultricies lacinia vel, facilisis a orci. Nulla at laoreet eros. Proin molestie enim quis aliquet consectetur. Nunc laoreet porta dolor non dapibus. Fusce cursus elit et diam tincidunt bibendum. Nullam quis tincidunt lacus. Nam sit amet semper massa. In eu enim convallis, cursus erat sed, egestas nunc.
+						</span>
+				</div>
 				<p id="blog-body">
 					Aliquam erat volutpat. Quisque in sagittis nunc, eu egestas mauris. Fusce feugiat lectus non arcu rutrum, id eleifend magna auctor. Fusce aliquam eleifend vestibulum. Suspendisse consectetur ante ut purus dictum porttitor. Sed risus tellus, faucibus ut nulla a, ultrices rutrum nulla. Maecenas cursus sit amet augue a tincidunt. Integer ut nisl eu nisi varius dignissim sit amet ut augue. Nam maximus eget dui et aliquet. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ornare nisl ac felis tincidunt, sit amet gravida nisi tempor. Ut et nunc ut erat bibendum accumsan. Duis semper nisl vitae suscipit elementum. Mauris egestas mi sed eleifend posuere. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 				</p>
@@ -41,9 +60,6 @@
 					<img id="quotation" src="images/iconmonstr-quote-left-thin-240 (1).png">
 					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt facilisis scelerisque turpis fames sed do.
 				</p>	
-				<p id="blog-body">
-					Nunc et rhoncus erat. Mauris facilisis scelerisque turpis, in ornare neque rutrum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vitae nibh massa. Vivamus at finibus turpis, at faucibus sapien. Curabitur sagittis nibh orci, vel ultricies neque tempus nec. Etiam dolor felis, porta eget finibus a, pulvinar a risus. Donec placerat mollis feugiat. Vivamus bibendum sit amet nulla ut blandit. Nunc condimentum turpis urna, sit amet consequat libero placerat mollis. Donec consequat iaculis dui fringilla molestie. Sed commodo velit dui. Etiam sed neque venenatis, aliquet sem id, volutpat ipsum.
-				</p>
 				<p id="blog-body">
 					Nunc et rhoncus erat. Mauris facilisis scelerisque turpis, in ornare neque rutrum at. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent vitae nibh massa. Vivamus at finibus turpis, at faucibus sapien. Curabitur sagittis nibh orci, vel ultricies neque tempus nec. Etiam dolor felis, porta eget finibus a, pulvinar a risus. Donec placerat mollis feugiat. Vivamus bibendum sit amet nulla ut blandit. Nunc condimentum turpis urna, sit amet consequat libero placerat mollis. Donec consequat iaculis dui fringilla molestie. Sed commodo velit dui. Etiam sed neque venenatis, aliquet sem id, volutpat ipsum.
 				</p>
@@ -84,7 +100,7 @@
 				<p id="blog-date">
 					1/5/20
 				</p>
-				<button id="blog-button"><a href="les_montagnes_blog.html">Read more</a></button>
+				<button id="blog-button"><a href="les montagnes/blog_post.html">Read more</a></button>
 			</div>
 			<div id="blog-2">
 				<p>
@@ -96,7 +112,7 @@
 				<p id="blog-date">
 					1/3/20
 				</p>
-				<button id="blog-button"><a href="les_montagnes_blog.html">Read more</a></button>
+				<button id="blog-button"><a href="les montagnes/blog_post.html">Read more</a></button>
 			</div>
 			<div id="blog-3">
 				<p>
@@ -108,12 +124,12 @@
 				<p id="blog-date">
 					12/28/19
 				</p>
-				<button id="blog-button"><a href="les_montagnes_blog.html">Read more</a></button>
+				<button id="blog-button"><a href="les montagnes/blog_post.html">Read more</a></button>
 			</div>
 		</div>
 		<footer>
 			<div class="foot-menu">
-				<a href="#"><img id="logo-foot" src="images/montagnes-logo.svg" alt="Mountains"/></a>
+				<a href="/Users/sallott/Documents/GitHub/sageallott/les montagnes/main.html"><img id="logo-foot" src="images/montagnes-logo.svg" alt="Mountains"/></a>
 				<p id="address">Sage Allott<br>Boston, MA<br>
 						<a href="https://www.twitter.com"><img id="social-icon" src="images/iconmonstr-twitter-5-240 (1).png" alt="Twitter"></a>
 						<a href="https://www.facebook.com"><img id="social-icon" src="images/iconmonstr-facebook-5-240 (1).png" alt="Facebook"></a>

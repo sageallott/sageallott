@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+/* CSS Document 
+
+Sage Allott, January 2020
+*/
+
+
+/* Hover Effects */
+#menu-item-posts:hover,
+#menu-item-about:hover {
+	opacity: 0.8;
+}
+
+#blog-button:hover {
+	opacity:0.8;
+}
