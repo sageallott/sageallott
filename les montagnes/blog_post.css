@@ -50,6 +50,7 @@
 	position: absolute;
 	font-size: 13px;
 	font-weight:bold;
+	font-family: 'Open Sans';
 }
 
 #blog-body {
@@ -64,39 +65,39 @@
 
 #blog-info {
 	grid-area:sd;
-  display:grid;
-  grid-gap:0px;
+	display:grid;
+	grid-gap:0px;
 	grid-template-areas: "lft lft bio bio";
 	padding:15px;
 	background-color:#e9f3f6;
-  text-align:left;
-  max-height: 650px;
-  color:gray;
+	text-align:left;
+	max-height: 650px;
+	color:gray;
 }
 
 #quotation {
-  width:40px;
+	width:40px;
 }
 
 #quote {
-color:gray; 
-font-size:20px;
-background-color: #f5f5f5;
-padding:15px;
-display:inline-block;
-font-style: italic;
-font-weight:bold;
-}
+	color:gray; 
+	font-size:20px;
+	background-color: #f5f5f5;
+	padding:15px;
+	display:inline-block;
+	font-style: italic;
+	font-weight:bold;
+	}
 
 
 #info-left {
-  grid-area: lft;
-  padding:15px;
+	grid-area: lft;
+	padding:15px;
 }
 
 #info-right {
-  grid-area: bio;
-  padding:15px;
+	grid-area: bio;
+	padding:15px;
 }
 
 #author-image {
@@ -113,24 +114,25 @@ font-weight:bold;
 
 #author-name,
 #author-title {
-  color:#333f48;
-  font-size:16px;
-  font-weight:bold;
+	color:#333f48;
+	font-size:16px;
+	font-weight:bold;
+	font-family: 'Open Sans';
 }
 
 #author-bio {
-  color:gray;
-  font-size:15px;
-  font-weight:normal;
+	color:gray;
+	font-size:15px;
+	font-weight:normal;
 }
 
 #social-icon {
-  width:25px;
-  padding-top:10px;
+	width:25px;
+	padding-top:10px;
 }
 
 #social-sharing {
-  text-align: center;
+	text-align: center;
 }
 
 /* responsive styles */
@@ -157,8 +159,8 @@ font-weight:bold;
 }
 #author-image {
 	width:150px;
-  border-radius: 100%;
-  margin-top:50px;
+	border-radius: 100%;
+	margin-top:50px;
 }
 
 #info-left {
@@ -171,15 +173,16 @@ font-weight:bold;
 
 #author-name,
 #author-title {
-  color:#333f48;
-  font-size:16px;
-  font-weight:bold;
+	color:#333f48;
+	font-size:16px;
+	font-weight:bold;
 }
 
 #author-bio {
-  color:gray;
-  font-size:15px;
-  font-weight:normal;
-  margin-bottom:50px;
+	color:gray;
+	font-size:15px;
+	font-weight:normal;
+	margin-bottom:50px;
 }
+
 }
