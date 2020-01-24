@@ -41,6 +41,10 @@
 	height: 100%;
 }
 
+figure {
+	margin-left:0px;
+}
+
 #img-caption{
 	background-color: rgba(255,255,255,0.3);
 	color: #fff;
@@ -63,6 +67,10 @@
 	grid-area:main;
 }
 
+.card {
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
 #blog-info {
 	grid-area:sd;
 	display:grid;
@@ -73,6 +81,10 @@
 	text-align:left;
 	max-height: 650px;
 	color:gray;
+}
+
+blockquote {
+	margin:0px;
 }
 
 #quotation {
