@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Manipulating the DOM</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+<div id="top"></div>
+  <header class="page__header" id="nav">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Sage Allott</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Education" class="your-active-class">
+      <div class="landing__container">
+        <h2>Education</h2>
+        <p>
+          Suffolk University | Boston, MA<br>
+          BSBA, Marketing Innovation & New Media
+        </p>
+        <p>
+          HubSpot | Online<br>
+          Certification, HubSpot CMS Developer
+        </p>
+        <p>
+          Udacity | Online<br>
+          Nanodegree, Front-End Web Development
+        </p>  
+      </div>
+    </section>
+    <section id="section2" data-nav="Experience">
+      <div class="landing__container">
+        <h2>Experience</h2>
+        <p>
+          Markley Group | Boston, MA<br>
+          Digital Marketing Coordinator, Web Developer
+        </p>
+        <p>
+          HubSpot | Online<br>
+          Certification, HubSpot CMS Developer
+        </p>
+        <p>
+          Udacity | Online<br>
+          Nanodegree, Front-End Web Development
+        </p>  
+      </div>
+    </section>
+    <section id="section3" data-nav="About">
+      <div class="landing__container">
+        <h2>About</h2>
+        <p>
+          Driven individual with BSBA in Marketing Innovation & New Media (Digital Marketing) from Suffolk University's Sawyer Business School. Certified HubSpot CMS Developer. Current Digital Marketing Coordinator focused on building digital campaigns across email and website pages. Very motivated and creative, as well as knowledgeable about digital marketing, including marketing automation, email marketing, SEO, graphic design & digital design for email and webpages through HTML/CSS and JavaScript. 
+        </p>
+      <div>
+    </section>
+    <section id="section4" data-nav="Contact">
+      <div class="landing__container">
+        <h2>Contact</h2>
+        <p>
+          Email | sageallott@gmail.com<br>
+          Phone | (xxx)xxx-xxx<br>
+          LinkedIn | linkedin.com/in/sageallott</div>
+    </section>
+      <div>
+          <a href="#top" id="back-to-top"><br>
+            Back to top
+          </a>
+      </div>
+
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

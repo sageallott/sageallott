@@ -1,0 +1,194 @@
+/*
+ *
+ * CSS written based on SMACSS architecture.
+ * To learn more, visit: http://smacss.com/
+ * 
+ * For simplicity, no reset or normalize is added. 
+ * To learn more, visit: https://css-tricks.com/reboot-resets-reasoning/
+ *
+*/
+@import url('https://fonts.googleapis.com/css?family=Krona+One|Nixie+One&display=swap');
+
+/* ---- Base Rules ---- */
+body {
+    background: rgb(171, 224, 226);
+    background-image: url('/Users/sallott/Downloads/fend-refresh-2019/projects/landing-page/images/white-opacity-flowers.png');
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+
+/* Typography General*/
+h1 {
+    font-family:'Krona One', sans-serif;
+    font-size: 3em;
+    margin: 2em 1rem;
+    color: #f88686;
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 35em){
+    h1 {
+        font-size: 7em;
+        margin: 2em 4rem 1em;
+    }
+}
+
+h2 {
+    border-bottom: 2px solid #f8b1b5;
+    font-family: 'Nixie One', cursive;
+    font-size: 3em;
+    color: #fff;
+}
+
+p {
+    line-height: 1.6em;
+    color: #eee;
+}
+
+/* ---- Layout Rules ---- */
+main {
+    margin: 10vh 1em 10vh;
+}
+
+.main-hero {
+    min-height: 40vh;
+    padding-top: 3em;
+}
+
+section {
+    position: relative;
+    min-height: 80vh;
+}
+
+
+/* ---- Module Rules ---- */
+
+/* Navigation Styles*/
+.navbar__menu ul {
+    padding-left: 0;
+    margin: 0;
+    text-align: right;
+    height: 40px;
+    padding-top: 15px;
+    color: #fff;
+
+}
+
+.navbar__menu li {
+    display: inline-block;
+    color: #fff;
+}
+
+.navbar__menu .menu__link {
+    display: inline;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navbar__menu .menu__link:hover {
+    opacity: 0.7;
+    transition: ease 0.3s all;
+    cursor: pointer;
+}
+
+
+.navbar__menu .section_active_style {
+    background-color: #f5f5f5;
+    color:#ec8a8a;
+    transition: ease 0.3s all;
+}
+
+
+/* Header Styles */
+
+.page__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+
+/* Footer Styles */
+.page__footer {
+    background: #f5f5f5;
+    padding: 3em;
+    color: #fff;
+}
+
+.page__footer p{
+    color: #fff;
+}
+
+
+/* ---- Theme Rules ---- */
+/* Landing Container Styles */
+.landing__container {
+    padding: 1em;
+    text-align: left;
+}
+
+@media only screen and (min-width: 35em){
+    .landing__container {
+        max-width: 50em;
+        padding: 4em;
+    }
+}
+
+section:nth-of-type(even) .landing__container {
+    margin-right: 0;
+    margin-left: auto;
+    text-align: right; 
+}
+
+
+/* ---- Theme State Rules ---- */
+/* Section Active Styles */
+/* Note: your-active-class class is applied through javascript. You should update the class here and in the index.html to what you set in your javascript file.  */
+section.your-active-class {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+section.your-active-class .landing__container::before {
+    opacity: 1;
+    animation: rotate 4s linear 0s infinite forwards;
+}
+
+section.your-active-class .landing__container::after {
+    opacity: 1;
+    animation: rotate 5s linear 0s infinite forwards reverse;
+}
+
+/* Section Active Styles Keyframe Animations */
+@keyframes rotate {
+	from {
+		transform: rotate(0deg)
+		           translate(-1em)
+		           rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg)
+		           translate(-1em) 
+		           rotate(-360deg);
+	}
+}
+
+#back-to-top {
+    color: #f5f5f5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#back-to-top:hover{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline;
+}
