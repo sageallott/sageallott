@@ -88,6 +88,12 @@ function addActiveClass () {
 
 // Scroll to anchor ID using scrollTO event
 
+function clickToSection() {
+    navBarMenu.addEventListener('click', function (e) {
+        const hasClicked = document.querySelector('#' + e.target.dataset.nav)
+        clicked.scrollIntoView();
+    });
+}
 
 /**
  * End Main Functions
