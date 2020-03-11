@@ -92,7 +92,7 @@ function addActiveClass () {
 function clickToSection() {
     navBarMenu.addEventListener('click', function (e) {
         const hasClicked = document.querySelector('#' + e.target.dataset.nav)
-        hasClicked.scrollIntoView();
+        hasClicked.scrollIntoView({behavior: "smooth"});
     });
 }
 
