@@ -18,8 +18,8 @@
  * 
 */
 
-const pageSections = document.querySelectorAll('section');
-const navMenu = document.querySelectorAll('navbar__list');
+const sections = document.querySelectorAll('section');
+const navBarMenu = document.querySelector('#navbar__list');
 
 
 /**
@@ -29,10 +29,11 @@ const navMenu = document.querySelectorAll('navbar__list');
 */
 
 // function to determine which page section is active
+
 function isActive() {
     minVal = 5000;
     maxSection = sections [0];
-    for (item of pageSections) {
+    for (item of sections) {
         let position = item.getBoundingClientRect();
         if (position.top > -500 & position.top <= minVal) {
             minVal = position.top;
@@ -50,12 +51,12 @@ function isActive() {
 
 // build the nav
 
-function buildNavMenu() {
-    for (let item of pageSections) {
+function buildNav() {
+    for (let item of sections) {
         let section = document.createElement('li');
         section.className = 'menu__link';
         section.dataset.nav = item.id;
-        section.innerText - item.dataset.nav;
+        section.innerText = item.dataset.nav;
         navBarMenu.appendChild(section);
     };
 }
@@ -64,12 +65,12 @@ function buildNavMenu() {
 
 function addActiveClass () {
     window.addEventListener('scroll', function () {
-        let section = checkforActive();
+        let section = isActive();
         section.classList.add('your-active-class');
         // remove active class from other sections
-        for (let pageSect of pageSections) {
-            if (pageSect.id !== section.id & pageSect.classList.contains('your-active-class')) {
-                pageSect.classList.remove('your-active-class');
+        for (let sect of sections) {
+            if (sect.id !== section.id & sect.classList.contains('your-active-class')) {
+                sect.classList.remove('your-active-class');
             }
         }
         // add header style
@@ -91,7 +92,7 @@ function addActiveClass () {
 function clickToSection() {
     navBarMenu.addEventListener('click', function (e) {
         const hasClicked = document.querySelector('#' + e.target.dataset.nav)
-        clicked.scrollIntoView();
+        hasClicked.scrollIntoView();
     });
 }
 
@@ -103,7 +104,7 @@ function clickToSection() {
 
 // Build menu 
 
-buildNavMenu();
+buildNav();
 
 // Scroll to section on link click
 
