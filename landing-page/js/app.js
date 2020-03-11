@@ -103,6 +103,12 @@ function clickToSection() {
 
 // Build menu 
 
+buildNavMenu();
+
 // Scroll to section on link click
 
+clickToSection();
+
 // Set sections as active
+
+addActiveClass();
